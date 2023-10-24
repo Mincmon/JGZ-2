@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +9,91 @@
     <link rel="stylesheet" href="main.js">
 </head>
 
-<body>
+<body class="escuro">
     
-
+<header>
     <div id="cabeca">
         <div id="logo">
             <img src="IMAGENS/logo light.png" alt="" class="logo">
-            <h1 class="nm">JGZGJ</h1>
+            <h1 class="nm escuro">JGZGJ</h1>
         </div>
-    <h1 class="nomeLoja" id="kk"   >Crie sua Própria História de Elegância</h1>
+    <h1 class="nomeLoja escuro" id="kk"   >Crie sua Própria História de Elegância</h1>
     </div>
     <!-- header -->
 
    
-
-        <nav class="nav">
-            <a href="#" class="nav-item is-active" active-color="#AA77FF">Home</a>
-            <a href="#" class="nav-item" active-color="#AA77FF">Coleções</a>
-            <a href="#" class="nav-item" active-color="#AA77FF">Carrinho</a>
-            <a href="#" class="nav-item" active-color="#AA77FF">História</a>
-            <a href="#" class="nav-item" active-color="#AA77FF">Contato</a>
+    <div id="head-botoes">
+        <nav class="nav escuro">
+            <a href="#" class="nav-item is-active escuro" active-color="#AA77FF">Home</a>
+            <a href="#" class="nav-item escuro" active-color="#AA77FF">Coleções</a>
+            <a href="#" class="nav-item escuro" active-color="#AA77FF">Carrinho</a>
+            <a href="#" class="nav-item escuro" active-color="#AA77FF">História</a>
+            <a href="#" class="nav-item escuro" active-color="#AA77FF">Contato</a>
             <span class="nav-indicator"></span>
         </nav>
         <label class="switch">
             <input type="checkbox">
-            <span class="slider"></span>
-        </label
+            <span class="slider escuro"></span>
+        </label>
+        <div id="carrinho-icon" onclick="toggleCarrinho()">
+            <div class="imagem">
+            <img src="IMAGENS/carrinho.png" alt="" id="produtos">
+            </div>
+            <span id="cont-carrinho">0</span>
+        </div>
+        
+        
+        <div id="carrinho-itens" style="display: none;">
+            <ul id="itens-lista" class="texto-claro"></ul>
+            <span id="preco-total" class="texto-claro">Valor Total: R$0,00</span>
+            <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+        </div>
+    </div>
+</header>
         <!-- fim header -->
         <!-- coleções -->
         <div class="colecoes">
-            <div class="brinco1">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco1.webp" alt="">
                 <p class="titulo-brinco">Brinco Estrela</p>
                 <p class="descricao"> Este deslumbrante brinco é uma verdadeira obra-prima da sustentabilidade e da
                     moda. Cada detalhe deste acessório foi projetado para combinar a beleza das estrelas com a
                     responsabilidade ambiental.
                 </p>
+                <div class="compra">
+                    <h2 class="preco escuro">R$</h2>
+                    <button onclick="addCarrinho('Brinco Estrela', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="">
+                    </button>
+                    
+                </div>
             </div>
-            <div class="brinco2">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco2.webp" alt="">
                 <p class="titulo-brinco">Brinco Gota de agua</p>
                 <p class="descricao"> Este deslumbrante brinco é uma verdadeira obra-prima da sustentabilidade e da
                     moda. Cada detalhe deste acessório foi projetado para combinar a beleza das estrelas com a
                     responsabilidade ambiental.
                 </p>
+                <div class="compra">
+                    <h2 class="preco">R$</h2>
+                    <button onclick="addCarrinho('Brinco Gota de agua', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="">
+                    </button>
+                </div>
             </div>
-            <div class="brinco3">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco3.webp" alt="">
                 <p class="titulo-brinco">Brinco Coração</p>
                 <p class="descricao"> Este deslumbrante brinco é uma verdadeira obra-prima da sustentabilidade e da
                     moda. Cada detalhe deste acessório foi projetado para combinar a beleza das estrelas com a
                     responsabilidade ambiental</p>
+                    <div class="compra">
+                        <h2 class="preco">R$</h2>
+                        <button onclick="addCarrinho('Brinco Coração', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="" >
+                    </button>
+                    </div>
             </div>
         </div>
         <!-- imagens -->
@@ -72,30 +106,48 @@
             </div>
         </div>
         <div class="colecoes">
-            <div class="brinco4">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco4.webp" alt="">
                 <p class="titulo-brinco">Colar Masculino</p>
                 <p class="descricao"> Está maravilhosa corrente é uma verdadeira obra-prima da sustentabilidade e da
                     moda. Cada detalhe deste acessório foi projetado para a responsabilidade ambiental</p>
+                    <div class="compra">
+                        <h2 class="preco">R$</h2>
+                        <button onclick="addCarrinho('Colar Masculino', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="" >
+                    </button>
+                    </div>
             </div>
-            <div class="brinco5">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco5.webp" alt="">
                 <p class="titulo-brinco">Colar Simples</p>
                 <p class="descricao"> Está maravilhosa corrente é uma manifestação da responsabilidade ambiental. Cada
                     peça é moda feita com materiais reutilizáveis, demonstrando o compromisso com a sustentabilidade.
                 </p>
+                <div class="compra">
+                    <h2 class="preco">R$</h2>
+                    <button onclick="addCarrinho('Colar Simples', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="" >
+                    </button>
+                </div>
             </div>
-            <div class="brinco6">
+            <div class="brinco escuro">
                 <img src="IMAGENS/brinco6.webp" alt="">
                 <p class="titulo-brinco">Colar de gatinho</p>
                 <p class="descricao">Está maravilhosa correntecom pingente é uma manifestação da responsabilidade
                     ambiental. Cada peça é moda feita com materiais reutilizáveis, demonstrando o compromisso com a
                     sustentabilidade.</p>
+                    <div class="compra">
+                        <h2 class="preco">R$</h2>
+                        <button onclick="addCarrinho('Colar de gatinho', 20)" class="carrinho">
+                    <img src="IMAGENS/carrinho.png" alt="" >
+                    </button>
+                    </div>
             </div>
         </div>
         <!-- footer -->
         <div class="container">
-            <footer class="rodape" id="contato">
+            <footer class="rodape escuro" id="contato">
                 <div class="rodape-div">
             
                 
@@ -128,7 +180,7 @@
                     </div>
             
                 </div>
-                <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+                <p class="rodape-direitos escuro">Copyright © 2023 – Todos os Direitos Reservados.</p>
             </footer>
         </div>
     
@@ -177,6 +229,7 @@ checkbox.addEventListener('change', function() {
                 item.classList.contains('is-active') && handleIndicator(item);
             });
         </script>
+        <script src="main.js"></script>
     </div>
 </body>
 

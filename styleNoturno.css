@@ -4,8 +4,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
+ul{
+  list-style: none;
+}
+
+#carrinho-itens{
+  position: absolute;
+  left: 80%;
+  top: 26%;
+  background-color: #2196F3;
+  padding: 10px 7px;
+}
+
+.add{
+  background-color: greenyellow;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+}
+
+.add:hover{
+  background-color: greenyellow;
+}
+
+.remove{
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+}
+
+.remove:hover{
+  background-color: red;
+}
+
+.limpa{
+  border: 0;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.escuro{
+  
+}
+
+.texto-claro{
+  color: white;
+}
 
 body {
     background-color: #3A1078;
@@ -15,6 +63,26 @@ body {
   justify-content: center;
   align-items: center;
   /* background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/debut_light.png"); */
+}
+
+.compra{
+  display: flex;
+  justify-content: center;
+}
+
+.preco{
+  color: white;
+}
+
+.carrinho{
+  width: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  border: 0;
+}
+
+#produtos{
+  width: 60px;
+  
 }
 
 .nav {
@@ -82,54 +150,28 @@ h1#nomeLoja.nomeLoja{
     /* border-right: 50px; */
 }
 
+#head-botoes{
+  display: flex;
+  justify-content: center;
+  
+}
+
 .colecoes {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 25px; 
 }
-.brinco1{
+.brinco{
     background-color: #3795BD;
     /* width: 150px;
     height: 150px; */
     padding: 15px;
     margin: 20px;
+    box-shadow: #333;
+    border-radius: 20px;
 }
-.brinco2{
-    background-color: #3795BD;
-    /* width: 150px;
-    height: 150px; */
-    padding: 15px;
-    margin: 20px;
-}
-.brinco3{
-    background-color: #3795BD;
-    /* width: 150px;
-    height: 150px; */
-    padding: 15px;
-    margin: 20px;
-}
-.brinco4{
-    background-color: #3795BD;
-    /* width: 150px;
-    height: 150px; */
-    padding: 15px;
-    margin: 20px;
-}
-.brinco5{
-    background-color: #3795BD;
-    /* width: 150px;
-    height: 150px; */
-    padding: 15px;
-    margin: 20px;
-}
-.brinco6{
-    background-color: #3795BD;
-    /* width: 150px;
-    height: 150px; */
-    padding: 15px;
-    margin: 20px;
-}
+
 
 .brinco img {
     max-width: 100%; 
@@ -176,11 +218,7 @@ img.identidade{
     width: 60px;
     height: 60px;
 }
-.brinco1, .brinco2, .brinco3, .brinco4, .brinco5,.brinco6{
-    background-color: #3795BD;
-    box-shadow: #333;
-    border-radius: 20px;
-}
+
 p{
     text-align: center;
     font-style: 15px;
@@ -203,8 +241,9 @@ p{
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 104px;
+    height: 60px;
+    margin: 0 30px;
   }
   
   .switch input {
@@ -230,8 +269,8 @@ p{
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 52px;
+    width: 52px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -250,9 +289,9 @@ p{
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(42px);
   }
   .rodape{
     background-color: #4E31AA;
