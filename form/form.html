@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/index/style.css">
 </head>
-<body>
+<body class="ff-claro">
     <div class="troca">
     <label class="switch" >
         <input type="checkbox" id="trocaCor">
@@ -17,17 +17,17 @@
     
 <div class="container" id="container">
     <div class="conteudo">
-    <h2>Cadastro</h2>
+    <h2 class="ft-claro">Cadastro</h2>
     <form id="registerForm">
-        <label for="name">Nome:</label>
+        <label for="name" class="ft-claro">Nome:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">E-mail:</label>
+        <label for="email" class="ft-claro">E-mail:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="password">Senha:</label>
+        <label for="password" class="ft-claro">Senha:</label>
         <input type="password" id="password" name="password" required>
-        <p>A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula e um número.</p>
+        <p class="ft-claro">A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula e um número.</p>
 
         <button type="button" onclick="register()">Cadastrar</button>
     </form>
@@ -37,5 +37,6 @@
 </div>
 
 <script src="main.js"></script>
+<script src="/index/main.js"></script>
 </body>
 </html>

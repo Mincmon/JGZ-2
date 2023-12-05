@@ -8,10 +8,6 @@
     text-transform: uppercase;
 }
 
-body{
-    background: #eee;
-}
-
 .container{
     min-height: 100vh;
     display: flex;
@@ -176,4 +172,12 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+}
+
+.ff-claro{
+    background-color:#eee;
+}
+
+.ff-escuro{
+    background-color:#8c8c8c;
 }

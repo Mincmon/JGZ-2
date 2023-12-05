@@ -73,3 +73,11 @@ function isValidPassword(password) {
 
     return uppercaseRegex.test(password) && lowercaseRegex.test(password) && numberRegex.test(password);
 }
+
+const trocaCor = document.getElementById("trocaCor");
+
+const ffClaro = document.querySelector(".ff-claro");
+
+trocaCor.addEventListener("click", () => {
+    ffClaro.classList.toggle("ff-escuro");
+})

@@ -115,6 +115,8 @@ const brincoClaro = document.querySelectorAll(".brinco-claro");
 const rodapeClaro = document.querySelector(".rodape-claro");
 const textoClaro = document.querySelectorAll(".texto-claro");
 
+
+
 trocaCor.addEventListener("click", () => {
   fundoClaro.classList.toggle("fundo-escuro");
   logoClaro.forEach((logos) => {
@@ -129,4 +131,7 @@ trocaCor.addEventListener("click", () => {
   textoClaro.forEach((texto) => {
     texto.classList.toggle("texto-escuro");
   })
+
+  
+  
 });

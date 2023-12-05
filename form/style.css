@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b7b6b6;
-    color: #333;
     margin: 0;
     width: 100vw;
 }
@@ -26,13 +24,11 @@ body {
 
 .container h2 {
     margin-bottom: 20px;
-    color: #333;
 }
 
 .container label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
     text-align: left;
 }
 
@@ -57,12 +53,11 @@ body {
 }
 
 .container button:hover {
-    background-color: #80b2c8;
+    background-color: #90c8e0;
 }
 
 .container p {
     margin-top: 10px;
-    color: #333;
 }
 
 .toggle-btn {
@@ -81,4 +76,16 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+}
+
+.ff-claro{
+    background-color:#eee;
+}
+
+.ff-escuro{
+    background-color:#8c8c8c;
+}
+
+.ft-claro{
+    color: #333;
 }
