@@ -1,14 +1,22 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login e Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/index/style.css">
 </head>
 <body>
-
+    <div class="troca">
+    <label class="switch" >
+        <input type="checkbox" id="trocaCor">
+        <span class="slider"></span>
+    </label>
+    </div>
+    
 <div class="container" id="container">
+    <div class="conteudo">
     <h2>Cadastro</h2>
     <form id="registerForm">
         <label for="name">Nome:</label>
@@ -25,6 +33,7 @@ x<!DOCTYPE html>
     </form>
     
     <p>Já tem uma conta? <span class="toggle-btn" onclick="toggleForm()">Login</span></p>
+    </div>
 </div>
 
 <script src="main.js"></script>
